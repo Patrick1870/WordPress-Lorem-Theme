@@ -6,4 +6,5 @@ Custom theme for portfolio.
   * SCSS
   * PHP
   * Plain JS
+  * WordPress Hooks
   
