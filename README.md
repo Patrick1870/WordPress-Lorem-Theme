@@ -1,8 +1,9 @@
 # WordPress-Lorem-Theme
 Custom theme
 
-##Tech Stack
+## Tech Stack
   * HTML
   * SCSS
   * PHP
+  * Plain JS
   
