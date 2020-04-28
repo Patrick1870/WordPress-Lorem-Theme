@@ -1,5 +1,5 @@
 # WordPress-Lorem-Theme
-Custom theme
+Custom theme for portfolio.
 
 ## Tech Stack
   * HTML
