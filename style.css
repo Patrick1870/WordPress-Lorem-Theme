@@ -1,0 +1,136 @@
+/*
+Theme Name: Lorem
+Theme URI: localhost
+Author: Patryk Adach
+Author URI: https://patrykadach.com
+Description: Portfolio theme. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lorem
+*/
+@import url(http://pl.allfont.net/allfont.css?fonts=alegreya);
+@font-face {
+  font-family: Avenir;
+  font-weight: Roman;
+  src: url("font/AvenirLTStd-Roman.otf") format("opentype");
+}
+body {
+  background: white;
+  color: black;
+}
+
+.page__container {
+  max-width: 1000px;
+  margin: auto;
+}
+.page__footer {
+  float: right;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.page__footer img {
+  margin-right: 25px;
+}
+
+.header {
+  max-width: 470px;
+  text-align: left;
+  margin: 60px auto 60px auto;
+}
+.header__hero__title {
+  font-family: Alegreya, arial;
+  font-weight: 400;
+  font-size: 37.5px;
+  line-height: 33.33px;
+  margin-bottom: 15px;
+}
+.header .textwidget p {
+  font-family: Avenir, arial;
+  font-size: 12.5px;
+  letter-spacing: 0.38em;
+  line-height: 22.92px;
+}
+
+.portfolio__item {
+  display: inline-block;
+  margin: 0 0 3em;
+  width: 33%;
+}
+.portfolio__item__link img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 350px;
+  width: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal__content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.modal__slides {
+  display: none;
+}
+.modal__slides img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .portfolio__item {
+    width: 49%;
+  }
+}
+@media (max-width: 600px) {
+  .portfolio__item {
+    width: 100%;
+  }
+  .portfolio__item__link img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .modal__slides {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
